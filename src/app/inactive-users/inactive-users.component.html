@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Inactive Users({{inactiveSwitchCount}})</h3>
+    </div>
+    <p *ngFor='let user of inactiveuser;let i = index;'>{{user}}
+        <a href='#' (click)='onSwitch(i)'>switch to active</a>
+    </p>
+</div>

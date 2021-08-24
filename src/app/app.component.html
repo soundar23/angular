@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-header ></app-header>
+      <router-outlet></router-outlet>
+      <!-- <app-recipes *ngIf='selectedFeature === "recipe"'></app-recipes>
+      <app-shopping-list *ngIf='selectedFeature !== "recipe"'></app-shopping-list> -->
+    </div>
+  </div>
+</div>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-cockpit-component
+      (sercreated)="onServerAdded($event)"
+      (bpcreated)="onBlueprintAdded($event)"
+      ></app-cockpit-component>
+    </div>
+    <div class="col-md-12">
+      <app-server-component
+      *ngFor="let serverElement of serverElements"
+      [srvElement] = "serverElement"
+      ></app-server-component>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+<div class="row">
+  <app-game-control (countEmitted)="onCountEmit($event)"></app-game-control>
+  <app-even-component *ngFor="let i of evenComponents"
+  [eveninput]='i'></app-even-component>
+  <app-odd-component *ngFor="let i of oddComponents"
+  [oddinput]='i'></app-odd-component>
+</div>
+</div> -->
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-active-users></app-active-users>
+      <app-inactive-users></app-inactive-users>
+
+    </div>
+  </div>
+</div> -->

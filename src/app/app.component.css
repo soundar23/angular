@@ -1,0 +1,12 @@
+p{
+    color:blue;
+}
+.odd_style{
+    color: green;
+    background-color: white;
+
+}
+.even_style{
+    color: blue;
+    background-color: red;
+}

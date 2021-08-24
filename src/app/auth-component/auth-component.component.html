@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-6 col-offset-3">
+        <h3>Login</h3>
+        <div class='alert alert-danger' *ngIf='error.length>0'>
+            {{error}}
+        </div>
+        <div *ngIf='isLoading'>
+            <app-loader></app-loader>
+        </div>
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf='!isLoading'>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" 
+            name="email" ngModel required email>
+            <label for="password">Password</label>
+            <input type="password" class="form-control"
+            name="password" ngModel required minlength="6">
+            <button class="btn btn-primary" type='submit' [disabled]='!authForm.valid'> {{isLoggedIn?'Sign in':'Sign up'}}</button>
+            <button class="btn btn-primary" (click) = 'switchmode()'>Switch to {{isLoggedIn?'Sign up':'Sign in'}}</button>
+        </form>
+    </div>
+</div>
